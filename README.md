@@ -8,7 +8,8 @@ This tool is largely designed to allow forensics professionals to, in a targette
 For example, let's say that an Office 365 account had been compromised and the logs show unauthorised email, calendar, or address book (we get them all) access.  If the digital forensics professional extracts the received timestamps from the logs (e.g., from the ActiveSync logs via the RDPS ASP), and places said timestamps into a single file, with each timestamp sitting on a line by itself, they can run this tool and have it download all emails, calendar data, and address book data accessed by the individual.  These emails (all EML format) can then be included in the report or, itself, parsed and/or added to the case file (e.g., FTK or autopsy).
 
 ## Requirements ##
->Python 3.4
+Python >3.4
+
 O365 (`pip install O365`)
 
 ## Future Work ##
